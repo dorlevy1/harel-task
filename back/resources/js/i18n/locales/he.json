@@ -1,0 +1,80 @@
+{
+    "app": {
+        "loggedInAs": "מחובר/ת בתור",
+        "logout": "התנתקות"
+    },
+    "login": {
+        "title": "ניהול טיקטים",
+        "subtitle": "התחברות לחשבון שלך",
+        "email": "מייל",
+        "password": "סיסמא",
+        "emailPlaceholder": "you@example.com",
+        "passwordPlaceholder": "--------",
+        "signingIn": "מתחבר/ת...",
+        "signIn": "התחברות"
+    },
+    "tickets": {
+        "title": "ניהול פניות",
+        "newTicket": "+ פנייה חדשה",
+        "loading": "טוען פניות...",
+        "loadError": "שגיאה בטעינת הפניות.",
+        "empty": "לא נמצאו פניות.",
+        "statusUpdated": "הסטטוס עודכן בהצלחה",
+        "statusUpdateFailed": "שגיאה בעדכון הסטטוס"
+    },
+    "filter": {
+        "status": "סטטוס",
+        "allStatuses": "כל הסטטוסים",
+        "priority": "עדיפות",
+        "allPriorities": "כל העדיפויות",
+        "assignedUser": "משתמש מוקצה",
+        "allUsers": "כל המשתמשים",
+        "sortBy": "מיון לפי",
+        "dateCreated": "תאריך יצירה",
+        "direction": "כיוון",
+        "descending": "יורד",
+        "ascending": "עולה"
+    },
+    "ticket": {
+        "unassigned": "לא משוייך",
+        "createdBy": "נוצר על ידי:",
+        "stale": "לא טופל (48+ שעות)",
+        "edit": "עריכה"
+    },
+    "modal": {
+        "editTicket": "עריכת פנייה",
+        "newTicket": "פנייה חדשה",
+        "title": "כותרת *",
+        "description": "תיאור *",
+        "priority": "עדיפות",
+        "assignTo": "שיוך ל",
+        "unassigned": "לא משוייך",
+        "genericError": "משהו השתבש.",
+        "cancel": "ביטול",
+        "saving": "שומר...",
+        "save": "שמירת פנייה",
+        "updated": "הפנייה עודכנה בהצלחה",
+        "created": "הפנייה נוצרה בהצלחה"
+    },
+    "stats": {
+        "total": "סך הכל פניות",
+        "open": "פתוח",
+        "inProgress": "בטיפול",
+        "closed": "סגור",
+        "byPriority": "לפי עדיפות",
+        "userWorkload": "כמות פניות לכל משתמש",
+        "assigned": "פתוחות",
+        "closedCount": "סגורות",
+        "noData": "אין נתונים להצגה"
+    },
+    "priority": {
+        "high": "גבוהה",
+        "medium": "בינונית",
+        "low": "נמוכה"
+    },
+    "status": {
+        "open": "פתוח",
+        "in_progress": "בטיפול",
+        "closed": "סגור"
+    }
+}
