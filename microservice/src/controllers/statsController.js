@@ -1,6 +1,6 @@
 const statsService = require('../services/statsService');
 
-async function overview(req, res, next) {
+const overview = async (req, res, next) => {
     try {
         const data = await statsService.getOverview();
         res.json(data);
@@ -9,7 +9,7 @@ async function overview(req, res, next) {
     }
 }
 
-async function users(req, res, next) {
+const users = async (req, res, next) => {
     try {
         const data = await statsService.getUserStats();
         res.json({ data });

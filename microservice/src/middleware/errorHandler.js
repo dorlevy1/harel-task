@@ -5,7 +5,7 @@
  * Logs the full error in development, hides details in production.
  */
 
-function errorHandler(err, req, res, _next) {
+const errorHandler = (err, req, res, _next) => {
     const status = err.status || 500;
 
     console.error(`[Error] ${req.method} ${req.originalUrl} - ${err.message}`);

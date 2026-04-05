@@ -7,7 +7,7 @@
 
 const HEADER_NAME = 'x-internal-token';
 
-function authToken(req, res, next) {
+const authToken = (req, res, next) => {
     if (!process.env.INTERNAL_TOKEN) {
         console.error('[Auth] INTERNAL_TOKEN is not configured');
         return res.status(500).json({ error: 'Service misconfigured' });

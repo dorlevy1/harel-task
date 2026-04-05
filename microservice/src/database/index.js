@@ -17,7 +17,7 @@ const config = {
 let pool = null;
 let connecting = null;
 
-async function getPool() {
+const getPool = async () => {
     if (pool) return pool;
     if (!connecting) {
         connecting = sql.connect(config).then((p) => {
@@ -30,14 +30,14 @@ async function getPool() {
     return connecting;
 }
 
-async function query(queryString, inputs = []) {
+const query = async (queryString, inputs = []) => {
     const pool = await getPool();
     const req = pool.request();
     inputs.forEach(({ name, type, value }) => req.input(name, type, value));
     return req.query(queryString);
 }
 
-async function close() {
+const close = async () => {
     if (pool) {
         await pool.close();
         pool = null;

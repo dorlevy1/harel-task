@@ -1,6 +1,6 @@
 const { query } = require('../database');
 
-async function getOverview() {
+const getOverview = async () => {
     const [totalResult, statusResult, priorityResult, recentResult] = await Promise.all([
         query('SELECT COUNT(*) AS total FROM tickets'),
         query('SELECT status, COUNT(*) AS count FROM tickets GROUP BY status'),
@@ -22,7 +22,7 @@ async function getOverview() {
     };
 }
 
-async function getUserStats() {
+const getUserStats = async () => {
     const result = await query(`
         SELECT
             u.id, u.name, u.email, COUNT(t.id) AS assigned_count,
